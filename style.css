@@ -368,6 +368,58 @@ span{
     background-color: var(--bg-color);
     width: 50px;
 }
+
+/* TODO : Skills */
+.skills{
+    background: var(--bg-color);
+}
+.skills .containner{
+    background: rgba(135, 207, 235, 0.26);
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.skills .containner .rowSkill{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+.skills .containner .bar{
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: var(--bg-color);
+    transition: 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.skills .containner .bar:hover{
+    box-shadow:  10px 10px 25px var(--main-color);
+    transform: scale(1.03);
+}
+.skills .containner .bar .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.skills .containner .bar #API{
+    background: white;
+}
+.skills .containner .bar .info span{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
 .sevices{
     background: var(--bg-color);
     color: black;
@@ -424,7 +476,7 @@ span{
     margin: auto;
 }
 .workExperience{
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 .portfolio-content{
     margin-bottom: 10rem;
@@ -497,7 +549,7 @@ span{
 }
 
 .activities{
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 /* TODO : Activities */
@@ -538,21 +590,23 @@ span{
     padding: 5rem;
 }
 .activitie-info .card{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     margin-top: 3rem;
 
 }
 .card img{
     position: relative;
-    top: 3rem;
-    left: calc(60%);
+    left: calc(20% + 27px);
     border-radius: 10%;
-    object-fit: contain;
+    object-fit: cover;
+    margin-left: 7.5rem;
+}
+.image-small{
+    border-radius: 50%;
 }
 .activitie-info h4{
+    position: relative;
     font-size: 3rem;
     font-weight: 800;
     line-height: 2;
@@ -567,7 +621,7 @@ span{
 
 /* TODO : Contact */
 .contact{
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 .contact h2{
     margin-bottom: 3rem;
@@ -659,10 +713,10 @@ span{
     html{
         font-size: 55%;
     }
-    .sevices-containner{
-        padding: 7rem;
-        grid-template-columns: repeat(2,1fr);
-        margin:  0 5rem;
+    .activities-containner{
+        padding: 3rem;
+        grid-template-columns: repeat(1,1fr);
+        margin:  3rem;
     }
 }
 @media(max-width:991px){
