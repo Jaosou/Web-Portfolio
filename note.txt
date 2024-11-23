@@ -1,0 +1,53 @@
+    <section class="sevices" id="sevices">
+
+        <h2 class="heading">Work Eperience</h2>
+
+        <div class="sevices-containner">
+
+            <!-- * Frist Work -->
+            <div class="sevice-box">
+                <div class="sevice-info">
+                    <img src="image/สกรีนช็อต 2024-11-23 164758.png" width="500" height="400">
+                    <h4>In progress project :</h4>
+                    <p>My main responsibility:<b> I am in charge of creating and improving programs. This includes designing, writing code, and testing the program.</b> <br></p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project uses eye tracking to prevent drowsy driving and reduce traffic accidents. We use a camera to capture faces and a Python program with the MediaPipe model to detect the eyes. When the eyes blink, the program will show a result. This is a two-year final project, so currently, we only have the basic software. We will develop it further in the future.</p>
+                </div>
+            </div>
+
+            <div class="sevice-box">
+                <div class="sevice-info">
+                    <h4>Hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minus facilis vitae officia. Deleniti, aut amet illum architecto veritatis quae facilis mollitia inventore est commodi nam vel aliquid, eveniet explicabo?</p>
+                </div>
+            </div>
+
+            <div class="sevice-box">
+                <div class="sevice-info">
+                    <h4>Hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minus facilis vitae officia. Deleniti, aut amet illum architecto veritatis quae facilis mollitia inventore est commodi nam vel aliquid, eveniet explicabo?</p>
+                </div>
+            </div>
+
+            <div class="sevice-box">
+                <div class="sevice-info">
+                    <h4>Hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minus facilis vitae officia. Deleniti, aut amet illum architecto veritatis quae facilis mollitia inventore est commodi nam vel aliquid, eveniet explicabo?</p>
+                </div>
+            </div>
+
+            <div class="sevice-box">
+                <div class="sevice-info">
+                    <h4>Hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minus facilis vitae officia. Deleniti, aut amet illum architecto veritatis quae facilis mollitia inventore est commodi nam vel aliquid, eveniet explicabo?</p>
+                </div>
+            </div>
+
+            <div class="sevice-box">
+                <div class="sevice-info">
+                    <h4>Hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minus facilis vitae officia. Deleniti, aut amet illum architecto veritatis quae facilis mollitia inventore est commodi nam vel aliquid, eveniet explicabo?</p>
+                </div>
+            </div>
+        </div>
+
+    </section>

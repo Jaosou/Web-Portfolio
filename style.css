@@ -207,17 +207,17 @@ span{
     }
     21%,
     40%{
-        content:"Web Designer" ;
+        content:"Backend Developer" ;
     }
     41%,
     60%{
-        content: "UI / UX Designer";
+        content: "Software Engineer";
     }61%,
     80%{
-        content: "Web Developer";
+        content: "Full Stack Developer";
     }81%,
     100%{
-        content: "Software testter";
+        content: "Data Analyst";
     }
 }
 @keyframes typing{
@@ -292,6 +292,14 @@ span{
     padding-left: calc(50% + 30px);
     /* padding-right: calc(5% - 8px); */
 }
+.pccchon{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.nvm{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
 .timeline-dot{
     height: 21px;
     width: 21px;
@@ -322,8 +330,23 @@ span{
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
+.timeline-content h1{
+    font-size:  30px;
+    color: orangered;
+    margin:  0 0 10px;
+    font-weight: 600;
+}
+.timeline-content .first-color{
+    color: blue;
+}
+.timeline-content .second-color{
+    color: rgb(255, 102, 0);
+}
+.timeline-content .text-color-nvm{
+    color: yellow;
+}
 .timeline-content h3{
-    font-size:  20px;
+    font-size:  22px;
     color: white;
     margin:  0 0 10px;
     font-weight: 500;
@@ -366,6 +389,7 @@ span{
     border:  5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    overflow-y: scroll;
 }
 .sevice-box:hover{
     background: white;
@@ -380,7 +404,12 @@ span{
     max-height: 200px;
     justify-content:left;
     align-items: baseline;
-    padding: 5rem 5rem;
+    padding: 5rem 5rem 5rem 5rem;
+}
+.sevice-info img{
+    display: flex;
+    position: relative;
+    left: calc(33%);
 }
 .sevice-info h4{
     font-size: 3rem;
@@ -394,6 +423,149 @@ span{
     line-height: 1.7;
     margin: auto;
 }
+.workExperience{
+    background-color: var(--bg-color);
+}
+.portfolio-content{
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20%;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+.row img{
+    width: 100%;
+    border-radius: 10%;
+    display: block;
+    transition: tranform 0.5s ;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1),white);
+    position: absolute;
+    border-radius: 10% ;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rempx;
+    transition: height 0.5s;
+}
+.layer h5{
+    color: black;
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.layer p{
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+.layer i{
+    color: var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: black;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.layer li{
+    color: #080808;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    height: 100%;
+}
+
+.activities{
+    background: var(--second-bg-color);
+}
+
+/* TODO : Activities */
+.activities h2{
+    margin-bottom: 5rem;
+    color: white;
+}
+.activities-containner{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.activitie-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    height: 600px;
+    border-radius: 3rem;
+    border: 5px solid var(--main-color);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.activitie-box:hover{
+    background: white;
+    color: #080808;
+    border: 5px solid white;
+    transform: scale(1.05);
+}
+.activitie-box .activitie-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: center;
+    align-items: baseline;
+    padding: 5rem;
+}
+.activitie-info .card{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+.card img{
+    position: relative;
+    top: 3rem;
+    left: calc(60%);
+    border-radius: 10%;
+    object-fit: contain;
+}
+.activitie-info h4{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+}
+.activitie-info p{
+    font-size: 1.6rem;
+    font-weight: 450;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}
+
+/* TODO : Contact */
 .contact{
     background-color: var(--bg-color);
 }
@@ -564,6 +736,22 @@ span{
     .home-img{
         width: 56vw;
     }
+    .sevice-box{
+        overflow-y: scroll;
+        scrollbar-width: auto;
+        scrollbar-color: var(--bg-color);
+    }
+    /* .sevice-box ::-webkit-scrollbar{
+        height: 5px;
+    }
+    .sevice-box ::-webkit-scrollbar-track{
+        background: white;
+    }
+    .sevice-box ::-webkit-scrollbar-thumb{
+        background-color: white;
+        border-radius: 50%;
+        border: 2px solid white;
+    } */
     .sevices h2{
         margin-bottom: 3rem;
     }
