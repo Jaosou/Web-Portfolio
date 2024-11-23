@@ -475,6 +475,7 @@ span{
     line-height: 1.7;
     margin: auto;
 }
+/* TODO : Work */
 .workExperience{
     background-color: var(--second-bg-color);
 }
@@ -596,6 +597,7 @@ span{
 
 }
 .card img{
+    width: 25vw;
     position: relative;
     left: calc(20% + 27px);
     border-radius: 10%;
@@ -713,15 +715,44 @@ span{
     html{
         font-size: 55%;
     }
+    .skills .containner .rowSkill{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
     .activities-containner{
         padding: 3rem;
-        grid-template-columns: repeat(1,1fr);
         margin:  3rem;
+    }
+    .card img{
+        width: 15vw;
+        position: relative;
+        left: calc(5% + 27px);
+        border-radius: 10%;
+        object-fit: cover;
+        margin-left: 7.5rem;
     }
 }
 @media(max-width:991px){
     .header{
         padding: 2rem 3%;
+    }
+    .text-animation{
+        font-size: 20px;
+        font-weight: 450;
+        min-width: 280px;
+    }
+    .text-animation span{
+        position: relative;
+    }
+    .text-animation span::after{
+        content: "";
+        background-color: var(--bg-color);
+        position: absolute;
+        width: calc(50% + 8px);
+        height: 100%;
+        border-left: 3px solid var(--bg-color);
+        right: -8px;
+        animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
     }
     .timeline-items::before{
         left: 7px;
@@ -733,6 +764,7 @@ span{
         left: 0;
 
     }
+    
     .sevices{
         padding-bottom: 7rem ;
     }
@@ -744,6 +776,10 @@ span{
     }
     .footer{
         padding: 2rem 3%;
+    }
+    .skills .containner .rowSkill{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
 }
 @media(max-width:895px){
@@ -779,7 +815,7 @@ span{
     .home-content h3{
         font-size: 2.6rem;
     }
-    .home-contenth1{
+    .home-content h1{
         font-size: 8rem;
         margin-top: 3rem;
     }
@@ -789,6 +825,57 @@ span{
     }
     .home-img{
         width: 56vw;
+    }
+    .portfolio-content{
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .row{
+        margin-top: 5rem;
+    }
+    .activitie-box{
+        height: 600px;
+/*         overflow: scroll;
+        overflow-y: scroll; */
+    }
+    .activitie-box .activitie-info{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        max-height: 50px;
+        justify-content: center;
+        align-items: baseline;
+        padding: 5rem;
+    }
+    .activitie-info .card{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 2rem;
+    
+    }
+    .card img{
+        height: 20vw;
+        width: 30vw;
+        position: relative;
+        left: 0;
+        border-radius: 10%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+    .activitie-info h4{
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 1.5;
+    }
+    .activitie-info p{
+        font-size: 1.2rem;
+        font-weight: 450;
+        max-height: 100px;
+        line-height: 1.0;
+        margin: auto;
     }
     .sevice-box{
         overflow-y: scroll;
