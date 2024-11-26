@@ -876,12 +876,12 @@ span{
         line-height: 1.5;
     }
     .activitie-info p{
-        overflow-y: auto;
+        overflow-y: inherit;
         font-size: 1.2rem;
         font-weight: 300;
         max-height: 100px;
         line-height: 1.0;
-        margin: auto;
+        margin-bottom: 5rem;
     }
     .sevice-box{
         overflow-y: scroll;
@@ -908,5 +908,7 @@ span{
     }
 }
 @media(max-width:500px){
-
+    .heading{
+        font-size: 6.5rem;
+    }
 }
