@@ -876,8 +876,9 @@ span{
         line-height: 1.5;
     }
     .activitie-info p{
+        overflow-y: auto;
         font-size: 1.2rem;
-        font-weight: 450;
+        font-weight: 300;
         max-height: 100px;
         line-height: 1.0;
         margin: auto;
@@ -906,6 +907,6 @@ span{
 
     }
 }
-@media(max-width:555px){
+@media(max-width:500px){
 
 }
