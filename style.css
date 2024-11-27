@@ -911,4 +911,7 @@ span{
     .heading{
         font-size: 6.5rem;
     }
+    .text-animation{
+        font-size: 1rem;
+    }
 }
